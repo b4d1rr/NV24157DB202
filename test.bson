@@ -1,13 +1,1 @@
-const { BSON } = require('bson');
-const fs = require('fs');
 
-const doc = {
-  name: "Bader",
-  age: 16,
-  level: "16"
-};
-
-const data = BSON.serialize(doc);
-fs.writeFileSync("test.bson", data);
-
-console.log("test.bson created!");
